@@ -1,0 +1,38 @@
+.progress-bar__progress {
+  background-color: white;
+  border-radius: 1em;
+  height: 2em;
+  width: 0;
+
+  &.is-animated {
+    animation:
+      a1 .3s ease 1 .5s forwards,
+      a2 .5s ease 1 1.5s forwards,
+      a3 .8s ease 1 3s forwards,
+      a4 .4s ease 1 4.5s forwards;
+  }
+}
+
+@keyframes a1 {
+  to {
+    width: 17%;
+  }
+}
+
+@keyframes a2 {
+  to {
+    width: 32%;
+  }
+}
+
+@keyframes a3 {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes a4 {
+  to {
+    width: 95%;
+  }
+}

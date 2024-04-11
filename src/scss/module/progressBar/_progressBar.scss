@@ -1,0 +1,17 @@
+.progress-bar {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: .6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  left: 50%;
+  max-width: 480px;
+  min-width: 320px;
+  padding: .5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 90%;
+}
