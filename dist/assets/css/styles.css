@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+html body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1;
+}
+html body button {
+  border: none;
+}
+html body button:hover {
+  cursor: pointer;
+}
+html body h1, html body h2 {
+  font: inherit;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.progress-bar {
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  left: 50%;
+  max-width: 480px;
+  min-width: 320px;
+  padding: 0.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 90%;
+}
+
+.progress-bar__bar {
+  align-self: stretch;
+  background-color: gray;
+  border-radius: 1em;
+  display: flex;
+}
+
+.progress-bar__progress {
+  background-color: white;
+  border-radius: 1em;
+  height: 2em;
+  width: 0;
+}
+.progress-bar__progress.is-animated {
+  animation: a1 0.3s ease 1 0.5s forwards, a2 0.5s ease 1 1.5s forwards, a3 0.8s ease 1 3s forwards, a4 0.4s ease 1 4.5s forwards;
+}
+
+@keyframes a1 {
+  to {
+    width: 17%;
+  }
+}
+@keyframes a2 {
+  to {
+    width: 32%;
+  }
+}
+@keyframes a3 {
+  to {
+    width: 70%;
+  }
+}
+@keyframes a4 {
+  to {
+    width: 95%;
+  }
+}
+.progress-bar__feedback {
+  align-self: flex-start;
+}
+
+.progress-bar__button {
+  align-self: stretch;
+  background-color: white;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+body {
+  min-height: 100svh;
+  position: relative;
+}
+
+/*# sourceMappingURL=styles.css.map */
