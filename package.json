@@ -9,8 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "make-gitignore": "^1.1.1",
     "sass": "^1.74.1",
     "tsc": "^2.0.4",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "uglify-js": "^3.17.4"
+  },
+  "devDependencies": {
+    "cssnano": "^6.1.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0"
   }
 }
